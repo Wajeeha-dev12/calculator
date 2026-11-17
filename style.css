@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poopins','sanserif';
+  
+}
+
+body{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    /* align-items: center; */
+    background: linear-gradient(85deg, #0a0a0a,#3a4452);
+
+}
+
+.calculator{
+
+    border: 1px solid #717377;
+    /* padding: 20px; */
+    border-radius: 16px;
+   background: transparent;
+   box-shadow: 0px 3px 15px rgba(113, 115, 119,0.5);
+}
+.inputs{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    /* margin: 10px; */
+    text-align: right;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.inputs::placeholder{
+
+    color: #ffff;
+}
+   .btn button {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color:#fff;
+    box-shadow: -8px -8px 15px rgb(255, 255, 255 ,0.1);
+    cursor: pointer;
+}
+.btn button.equalbtn {
+    background-color: rgb(133, 86, 23);
+    /* color: white; */
+}
+.btn button.operator{
+
+    color: rgb(61, 168, 61);
+
+}
+
+
+/* reponsivness */
+
+
+/* Mobile Responsive */
+
+/* Mobile Responsive Only */
+/* Mobile Responsive */
+
+@media screen and (max-width: 400px) {
+
+    body {
+        width: 100%;
+        min-height: 100dvh;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .calculator {
+        width: 100%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .inputs {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        gap: 3px;
+    }
+
+    .btn button {
+        width: 55px;
+        height: 55px;
+        margin: 5px 0;
+    }
+}
